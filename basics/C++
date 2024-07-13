@@ -1,1 +1,65 @@
+// Fibonacci Number using recursion
+
+#include <iostream>
+using namespace std;
+
+int fib(int n)
+{
+    if(n<=1)
+    return n;
+    return fib(n-1) + fib(n-2);
+}
+int main()
+{
+    int n;
+    cout<<"Enter the number:";
+    cin>>n;
+    cout<<fib(n);
+    return 0;
+}
+
+// Fibonacci Series using Space Optimized Method 
+#include<bits/stdc++.h> 
+using namespace std; 
+
+int fib(int n) 
+{ 
+	int a = 0, b = 1, c, i; 
+	if( n == 0) 
+		return a; 
+	for(i = 2; i <= n; i++) 
+	{ 
+	c = a + b; 
+	a = b; 
+	b = c; 
+	} 
+	return b; 
+} 
+
+// Driver code 
+int main() 
+{ 
+	int n = 9; 
+	
+	cout << fib(n); 
+	return 0; 
+} 
+
+// Print a multiplication table using while loop
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n=1,a;
+    cout<<"\nEnter the limit:";
+    cin>>i;
+    cout<<"\nEnter the table's number:";
+    cin>>a;
+    while(i>=n)
+    {
+        cout<<"\n"<<i<<"*"<<a<<"="<<i*a;
+        i--;
+    }
+    return 0;
+}
 
