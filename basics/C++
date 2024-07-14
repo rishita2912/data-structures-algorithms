@@ -63,3 +63,16 @@ int main()
     return 0;
 }
 
+// Time complexities
+The time complexity of a particular code depends on the given input size, not on the machine used to run the code.
+
+Big O notation: Worst case in upper bound
+Thetaa notation: Average case
+Omega notation:Best case in lower bound
+
+Space Complexity:
+The term space complexity generally refers to the memory space that a code uses while being executed.
+Auxiliary space is the additional space required to solve the problem.
+
+
+
