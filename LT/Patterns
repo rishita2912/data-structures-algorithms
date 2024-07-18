@@ -247,5 +247,128 @@ int main()
     }
 }
 
-11.           
+11.   1            1
+      1 2        2 1
+      1 2 3    3 2 1
+      1 2 3 44 3 2 1
+
+Code:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int space = 2*(5-1);
+    for(int i = 1; i<=5 ;i++)
+    {
+        for(int j = 1;j<=i;j++)
+        {
+            cout<<j;
+        }
+        for(int j = 1;j<=space;j++)
+        {
+            cout<<" ";
+        }
+        for(int j = i;j>=1;j--)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+        space -=2;
+    }
+}
+
+12.  1
+     2 3
+     4 5 6
+     7 8 9 10
+     11 12 13 14 15
+
+Code:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num = 1;
+    for(int i = 1;i<=5;i++){
+        for(int j = 1;j<=i;j++)
+        {
+            cout<<num<<" ";
+            num = num+1;
+        }
+        cout<<endl;
+    }
+}
+
+13. A
+    A B
+    A B C
+    A B C D
+    A B C D E
+
+Code:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i =0;i<5;i++)
+    {
+        for(char ch = 'A';ch <='A'+i; ch++)
+        {
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+14. A B C D E
+    A B C D
+    A B C
+    A B
+    A
+
+Code: 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0;i<5;i++)
+    {
+        for(char ch = 'A'; ch<= 'A'+(5-i-1);ch++)
+        {
+            cout<< ch<< " ";
+        }
+        cout<< endl;
+    }
+}
+
+15. A
+    B B
+    C C C
+    D D D D
+    E E E E E
+
+Code:
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+    int i,j;
+    char ch;
+    for(int i = 0; i<5; i++)
+    {
+    char ch = 'A'+i;
+    for(int j = 0; j<=i;j++)
+    {
+        cout<<ch<<" ";
+    }
+    cout<<endl;
+}
+}
+    
 
