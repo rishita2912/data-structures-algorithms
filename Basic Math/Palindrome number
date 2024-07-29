@@ -1,0 +1,35 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int palindrome(int n)
+{
+   int palindrome=0;
+   int dup=n;
+    while(dup>0)
+    {
+        int lastdigit = dup%10;
+        dup=dup/10;
+        palindrome= (palindrome*10)+lastdigit;
+    }
+    return (palindrome==n);
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    if(palindrome(n)==1)
+    {
+        cout<<"True";
+    }
+    else
+    {
+        cout<<"False";
+    }
+    
+    
+    /*cout<<"The reverse of the number is:"<<rev(n);*/
+    return 0;
+}
