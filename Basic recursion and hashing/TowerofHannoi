@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+void towersofHanoi(int start, int end, char source, char aux, char destination)
+{
+    if(start>end)
+    {
+        return;
+    }
+    towersofHanoi(start,end-1,source,destination,aux);
+    cout<<"Move disk"<<end<<"from"<<source<<"to"<<destination<<endl;
+    towersofHanoi(start,end-1,aux,source,destination);
+}
+int main()
+{
+    towersofHanoi(1,5,'A','B','C');
+}
