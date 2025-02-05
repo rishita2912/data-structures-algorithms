@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[100],n,x;
+    int i;
+    cout<<"Enter the limit:";
+    cin>>n;
+    for(i = 1;i<=n;i++)
+    {
+        cout<<"\nEnter the value:";
+        cin>>arr[i];
+    }
+    cout<<"Enter the value to search:";
+    cin>>x;
+    for(i=0; i<n; i++)
+    {
+    if(arr[i] == x )
+    {
+        cout<<"Element is found @"<<i;
+        return 0;
+    }
+    }
+    {
+        cout<<"Element is not found";
+        return 0;
+    }
+    return 0;
+    
+}
