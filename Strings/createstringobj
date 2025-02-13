@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string str1 = "Hello World!"; //Creating a string object using a constructor
+    string str2;
+    
+    cout<<"str1:"<<str1<<endl;
+    cout<<"str2(empty):"<<str2<<endl;
+
+    return 0;
+}
